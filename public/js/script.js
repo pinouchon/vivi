@@ -72,23 +72,23 @@ $('body').scrollspy('refresh'); // Refresh the scrollspy.
       });
     }
 
-    if ($('.portfolio-item').length > 0) {
-      var $container = $('#portfolio-grid');
-      $container.isotope({filter: '*'});
-      $('.group-selectors a').click(function(e) {
-        e.preventDefault();
-        var selector = $(this).attr('data-filter');
-        $container.isotope({filter: selector, columnWidth: 4});
-        $('.group-selectors a.active').removeClass('active');
-        $(this).toggleClass('active');
-        return false;
-      });
-      $('.group-selectors a').each(function() {
-        $(this).append('<span></span>');
-      });
-
-
-    }
+//    if ($('.portfolio-item').length > 0) {
+//      var $container = $('#portfolio-grid');
+//      $container.isotope({filter: '*'});
+//      $('.group-selectors a').click(function(e) {
+//        e.preventDefault();
+//        var selector = $(this).attr('data-filter');
+//        $container.isotope({filter: selector, columnWidth: 4});
+//        $('.group-selectors a.active').removeClass('active');
+//        $(this).toggleClass('active');
+//        return false;
+//      });
+//      $('.group-selectors a').each(function() {
+//        $(this).append('<span></span>');
+//      });
+//
+//
+//    }
 
 
 
