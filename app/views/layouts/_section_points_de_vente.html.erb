@@ -1,0 +1,44 @@
+<section id="points_de_vente">
+  <div class="sticky-paper-head has-shadow ">
+    <div class="content">
+      <h1>Points de vente</h1>
+    </div>
+  </div>
+
+  <div class="sticky-paper-body has-shadow ">
+    <div class="content">
+      <div class="row">
+        <div class="col-xs-12">
+          <div class="blog-list-holder row">
+
+            <% Pos.all.each do |pos| %>
+                <div class="blog-item item col-xs-12 col-md-6 col-lg-4">
+
+                  <div class="thumb has-shadow">
+                    <!--<div class="date">-->
+                    <!--08 Apr 2014-->
+                    <!--</div>-->
+                    <img alt="" src="<%= pos.image_url(:thumb_340_185).to_s %>"/>
+                  </div>
+                  <div class="info-area">
+
+                    <div class="title">
+                      <%= pos.title %>
+                    </div>
+                    <div class="excerpt">
+                      <p>
+                        <%= pos.description %>
+                      </p>
+                    </div>
+
+                    <!--<a class="le-btn" href="single-post.html">readmore</a>-->
+                  </div>
+                </div>
+            <% end %>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

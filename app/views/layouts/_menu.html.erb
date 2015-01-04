@@ -1,0 +1,73 @@
+<div class="col-xs-12  nav-menu top-menu-holder">
+  <nav class="hidden-xs visible-lg ">
+    <ul class="nav">
+      <li class="active">
+        <a href="#home">Accueil</a>
+      </li>
+      <!--<li>-->
+      <!--<a  href="#profile">profile</a>-->
+      <!--</li>-->
+      <!--<li>-->
+      <!--<a  href="#education">education</a>-->
+      <!--</li>-->
+      <!--<li>-->
+      <!--<a  href="#experiences">experiences</a>-->
+      <!--</li>-->
+      <!--<li>-->
+      <!--<a  href="#skills">skills</a>-->
+      <!--</li>-->
+      <% Category.all.each do |category| %>
+          <li>
+            <a href="#<%= category.name.parameterize %>"><%= category.name %></a>
+          </li>
+      <% end %>
+      <!--<li>-->
+      <!--<a href="#portfolio">portfolio</a>-->
+      <!--</li>-->
+      <li>
+        <a href="#points_de_vente">points de vente</a>
+      </li>
+      <li>
+        <a href="#contact">contact</a>
+      </li>
+
+
+    </ul>
+
+  </nav>
+
+  <select class="top-drop-menu nav visible-md visible-sm visible-xs hidden-lg">
+    <option value="#home" selected="selected">
+      Accueil
+    </option>
+
+    <% Category.all.each do |category| %>
+        <option value="#<%= category.name.parameterize %>">
+          <%= category.name %>
+        </option>
+    <% end %>
+
+    <!--<option value="#profile">-->
+    <!--Profile-->
+    <!--</option>-->
+    <!--<option value="#education">-->
+    <!--Education-->
+    <!--</option>-->
+    <!--<option value="#experiences">-->
+    <!--Experiences-->
+    <!--</option>-->
+
+    <!--<option value="#skills">-->
+    <!--Skills-->
+    <!--</option>-->
+
+    <!--<option value="#portfolio">-->
+    <!--Portfolio-->
+    <!--</option>-->
+
+    <option value="#contact">
+      Contact
+    </option>
+
+  </select>
+</div>

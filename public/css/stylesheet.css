@@ -6766,7 +6766,7 @@ header {
   position: relative;
 }
 .le-paragraph:before {
-  content: "\f192";
+  content: "♥";
   font-size: 50px;
   height: 50px;
   line-height: 50px;
@@ -7070,7 +7070,7 @@ header .head-image:before {
   border-radius: 5px 5px 0 0 ;
 }
 header .head-image:before {
-  background-color: rgba(216, 205, 187, 0.5);
+  background-color: rgba(216, 205, 187, 0.34);
   background: none\9;
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#80d8cdbb', endColorstr='#80d8cdbb');
   content: "";
@@ -7114,8 +7114,8 @@ header .avatar {
   -moz-transition: all 0.3s ease;
   -o-transition: all 0.3s ease;
   transition: all 0.3s ease;
-  width: 300px;
-  height: 300px;
+  width: 180px;
+  height: 180px;
   color: #272425;
   border: 10px solid #272425;
   display: inline-block;
@@ -7123,7 +7123,7 @@ header .avatar {
   position: relative;
   position: absolute;
   left: 0;
-  right: 0;
+  right: 930px;
   top: 0;
   bottom: 0;
   margin: auto;
@@ -7174,7 +7174,7 @@ header .avatar:before {
   width: 95%;
   height: 95%;
   position: absolute;
-  border: 10px solid #a62215;
+  border: 2px solid #a62215;
   left: 0;
   top: 0;
   background-color: transparent;
@@ -7309,7 +7309,7 @@ header .avatar:after {
   filter: progid:DXImageTransform.Microsoft.gradient(enabled='false');
 }
 .top-menu-holder ul li a {
-  background-color: rgba(39, 36, 37, 0.3);
+  background-color: rgba(10, 8, 7, 0.61);
   background: none\9;
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#4d272425', endColorstr='#4d272425');
   border-radius: 5px;
@@ -7414,7 +7414,7 @@ header .avatar:after {
 }
 /*Sections*/
 .wrapper {
-  padding: 65px 0;
+  padding: 45px 0;
 }
 .wrapper > .container {
   padding: 0;
@@ -8356,7 +8356,7 @@ select.top-drop-menu {
     display: none;
   }
   .portfolio-holder .portfolio-item a {
-    min-height: 404px;
+    min-height: 362px;
   }
 }
 @media all and (max-width: 560px) {

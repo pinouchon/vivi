@@ -123,7 +123,7 @@ $('body').scrollspy('refresh'); // Refresh the scrollspy.
     e.preventDefault();
     $('html,body').animate({
       scrollTop: 0
-    }, 2000);
+    }, 1000);
   });
 
   if ($('a[data-rel="prettyphoto"]').length > 0) {
@@ -205,7 +205,7 @@ $('body').scrollspy('refresh'); // Refresh the scrollspy.
 
     $('html, body').stop().animate({
       scrollTop: $(destSection).offset().top + scrollOffset
-    }, 2000, 'easeInOutExpo');
+    }, 1000, 'easeInOutExpo');
   }
 
   $('.nav-menu a').bind('click', function(event) {
