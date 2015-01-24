@@ -11,3 +11,26 @@
  *= require_self
  *= require_tree .
  */
+
+.modal-dialog {
+    margin: 83px auto !important;
+}
+
+.modal-content {
+    background-image: url(../images/noise.png);
+    background-color: #f2f2f3;
+}
+
+#myModal .modal-dialog {
+    width: 900px;
+}
+
+/*#myModal {*/
+/*width: 900px;*/
+/*margin-top: -300px !important;*/
+/*margin-left: -350px !important;*/
+/*}*/
+
+/*#myModal .modal-body {*/
+/*max-height: 525px;*/
+/*}*/

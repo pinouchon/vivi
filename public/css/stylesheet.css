@@ -7286,7 +7286,7 @@ header .avatar:after {
   text-align: right;
 }
 .top-menu-holder ul li {
-  margin: 0 5px;
+  margin: 0 1px;
   display: inline-block;
   font-size: 13px;
   letter-spacing: 1px;
@@ -7844,22 +7844,22 @@ header .avatar:after {
   transition: all 0.3s ease;
 }
 .portfolio-holder .portfolio-item a img {
-  filter: grayscale(100%);
-  -webkit-filter: grayscale(100%);
-  -moz-filter: grayscale(100%);
-  -o-filter: grayscale(100%);
-  -ms-filter: grayscale(100%);
+  /*filter: grayscale(100%);*/
+  /*-webkit-filter: grayscale(100%);*/
+  /*-moz-filter: grayscale(100%);*/
+  /*-o-filter: grayscale(100%);*/
+  /*-ms-filter: grayscale(100%);*/
   border: 2px solid #272425;
 }
 .portfolio-holder .portfolio-item a:hover {
   background-color: #e64a3b;
 }
 .portfolio-holder .portfolio-item a:hover img {
-  filter: grayscale(0%);
-  -webkit-filter: grayscale(0%);
-  -moz-filter: grayscale(0%);
-  -o-filter: grayscale(0%);
-  -ms-filter: grayscale(0%);
+  /*filter: grayscale(0%);*/
+  /*-webkit-filter: grayscale(0%);*/
+  /*-moz-filter: grayscale(0%);*/
+  /*-o-filter: grayscale(0%);*/
+  /*-ms-filter: grayscale(0%);*/
 }
 .portfolio-holder .portfolio-item .holder {
   position: relative;
@@ -8263,7 +8263,7 @@ select.top-drop-menu {
 }
 @media (min-width: 1200px) {
   .portfolio-holder .portfolio-item a {
-    min-height: 358px;
+    /*min-height: 358px;*/
   }
 }
 @media (max-width: 1199px) {

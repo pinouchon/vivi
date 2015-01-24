@@ -11,9 +11,9 @@
     checkContactForm();
      $('body').scrollspy({ target: '.nav-menu' });
 
-   
-$('body').data()['bs.scrollspy'].options.offset = Math.abs(scrollOffset)+10; // Set the new offset 
-$('body').data()['bs.scrollspy'].process(); // Force scrollspy to recalculate the offsets to your targets 
+
+$('body').data()['bs.scrollspy'].options.offset = Math.abs(scrollOffset)+10; // Set the new offset
+$('body').data()['bs.scrollspy'].process(); // Force scrollspy to recalculate the offsets to your targets
 $('body').scrollspy('refresh'); // Refresh the scrollspy.
 
 
@@ -113,9 +113,9 @@ $('body').scrollspy('refresh'); // Refresh the scrollspy.
         }
       });
     });
-    
-    
-    
+
+
+
   });
 
 
@@ -138,7 +138,7 @@ $('body').scrollspy('refresh'); // Refresh the scrollspy.
   function checkContactForm() {
     if ($(".contact-form").length > 0) {
       var formStatus = $(".contact-form").validate();
-      //   ===================================================== 
+      //   =====================================================
       //sending contact form
       $(".contact-form").submit(function(e) {
         e.preventDefault();
@@ -162,8 +162,8 @@ $('body').scrollspy('refresh'); // Refresh the scrollspy.
       });
     }
   }
- 
-  
+
+
 
 
 //hashtag navigation address setup (deeplink)

@@ -44,11 +44,14 @@
               <!--</div>-->
               <!--</figure>-->
 
-
               <% category.items.each do |item| %>
-                  <figure class="col-xs-12 col-sm-6 col-md-4 portfolio-item advertisement">
+                  <figure class="col-xs-12 col-sm-6 col-md-4 portfolio-item advertisement" style="height: 522px" title="Cliquez pour plus d'informations">
                     <!--images/portfolio/work02.jpg-->
-                    <a href="<%= item.image_url(:thumb_1000).to_s %>">
+                    <a href="#" data-toggle="modal" data-target="#myModal"
+                       data-title="<%= item.title %>"
+                       data-title2="<%= item.title2 %>"
+                       data-image="<%= item.image_url(:thumb_1000).to_s %>"
+                       data-text="<%= item.description %>">
                       <img alt="" src="<%= item.image_url(:thumb_308_308).to_s %>"/>
                     </a>
 
