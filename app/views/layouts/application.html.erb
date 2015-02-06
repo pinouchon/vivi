@@ -37,6 +37,7 @@
 
     <header id="home">
 
+      <div id="bee"></div>
       <div class="head-image bg-image" data-bg-image="images/custom/home_bg2.jpg">
         <!--<div class="avatar wow bounceInDown" >-->
         <!--<img alt="avatar" src="images/custom/Candle3.jpg" />-->
@@ -86,7 +87,7 @@
     <%#= render partial: 'layouts/section_skills' %>
     <!--<hr class="le-hr">-->
 
-    <% Category.includes(:items).all.each do |category| %>
+    <% Category.includes(:items).order('categories.priority DESC').all.each do |category| %>
         <%= render partial: 'layouts/section_item', locals: {category: category} %>
     <% end %>
     <hr class="le-hr">

@@ -25,6 +25,27 @@
     width: 900px;
 }
 
+@media (max-width: 1580px) {
+    .top-menu-holder.split {
+        left: 1% !important;
+        right: 1% !important;
+        padding: 10px 0 !important;
+    }
+}
+
+#bee {
+    background-image: url(/images/bee.gif);
+    background-repeat: no-repeat;
+    background-position: bottom;
+    position: absolute;
+    top: -57px;
+    left: 100px;
+    width: 400px;
+    height: 400px;
+    transform: scale(0.2) scaleX(1);
+    z-index: 1000;
+}
+
 /*#myModal {*/
 /*width: 900px;*/
 /*margin-top: -300px !important;*/

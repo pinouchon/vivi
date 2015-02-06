@@ -24,3 +24,37 @@ $('#myModal').on('show.bs.modal', function (event) {
   modal.find('.modal-text').text(button.data('text'));
   modal.find('.modal-image').attr('src', button.data('image'));
 });
+
+var step = 0;
+var x = -120;
+var dx = 4;
+var turnProb = -2;
+function animateBee() {
+  x += dx;
+  step++;
+  turnProb += 0.1;
+  if (
+    (Math.random() < turnProb) ||
+    (x > 1100)) {
+    $('#bee').css('transform', 'scale(0.2) scaleX(-1)');
+    dx = -4;
+    turnProb = -2;
+  }
+  if (
+    (Math.random() < turnProb) ||
+    (x < -120)
+    ) {
+    $('#bee').css('transform', 'scale(0.2) scaleX(1)');
+    dx = 4;
+    turnProb = -2;
+  }
+
+  var top = Math.floor(-57 + 15 * Math.sin(step / 8));
+  $('#bee').css('left', x + 'px');
+  $('#bee').css('top', top + 'px');
+  setTimeout(animateBee, 30);
+}
+
+$(document).ready(function () {
+  animateBee();
+});

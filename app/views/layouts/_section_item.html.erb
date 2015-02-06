@@ -44,7 +44,7 @@
               <!--</div>-->
               <!--</figure>-->
 
-              <% category.items.each do |item| %>
+              <% category.items.order('priority DESC').each do |item| %>
                   <figure class="col-xs-12 col-sm-6 col-md-4 portfolio-item advertisement" style="height: 522px" title="Cliquez pour plus d'informations">
                     <!--images/portfolio/work02.jpg-->
                     <a href="#" data-toggle="modal" data-target="#myModal"

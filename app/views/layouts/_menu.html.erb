@@ -16,7 +16,7 @@
       <!--<li>-->
       <!--<a  href="#skills">skills</a>-->
       <!--</li>-->
-      <% Category.all.each do |category| %>
+      <% Category.order('priority DESC').all.each do |category| %>
           <li>
             <a href="#<%= category.name.parameterize %>"><%= category.name %></a>
           </li>
