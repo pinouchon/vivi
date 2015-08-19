@@ -51,7 +51,7 @@
                        data-title="<%= item.title %>"
                        data-title2="<%= item.title2 %>"
                        data-image="<%= item.image_url(:thumb_1000).to_s %>"
-                       data-text="<%= item.description %>">
+                       data-html="<%= item.description.gsub("\n", '<br/>').html_safe %>">
                       <img alt="" src="<%= item.image_url(:thumb_308_308).to_s %>"/>
                     </a>
 

@@ -29,7 +29,7 @@
     .top-menu-holder.split {
         left: 1% !important;
         right: 1% !important;
-        padding: 10px 0 !important;
+        padding: 10px 0 4px 0 !important;
     }
 }
 

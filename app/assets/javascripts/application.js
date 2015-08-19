@@ -21,7 +21,7 @@ $('#myModal').on('show.bs.modal', function (event) {
   var modal = $(this);
   modal.find('.modal-title').text(button.data('title'));
   modal.find('.modal-title2').text(button.data('title2'));
-  modal.find('.modal-text').text(button.data('text'));
+  modal.find('.modal-text').html(button.data('html'));
   modal.find('.modal-image').attr('src', button.data('image'));
 });
 

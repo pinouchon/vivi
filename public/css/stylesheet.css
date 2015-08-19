@@ -5460,7 +5460,7 @@ button.close {
   outline: 0;
 }
 .top-menu-holder li {
-  margin-bottom: 6px;
+  margin-bottom: 6px !important;
 }
 .modal.fade .modal-dialog {
   -webkit-transform: translate3d(0, -25%, 0);
@@ -7276,7 +7276,7 @@ header .avatar:after {
   background-color: #cfc1ab;
   border-radius: 0 0 10px 10px;
   box-shadow: 0 5px 0 #c5b59b;
-  padding: 10px;
+  padding: 10px 0 4px 0;
 }
 .top-menu-holder.split .nav {
   margin: 0;
