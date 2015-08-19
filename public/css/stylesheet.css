@@ -5459,6 +5459,9 @@ button.close {
   -webkit-overflow-scrolling: touch;
   outline: 0;
 }
+.top-menu-holder li {
+  margin-bottom: 6px;
+}
 .modal.fade .modal-dialog {
   -webkit-transform: translate3d(0, -25%, 0);
   transform: translate3d(0, -25%, 0);
